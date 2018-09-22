@@ -25,3 +25,11 @@ void DriveTrain::tankDrive(double leftVal, double rightVal) {
 	left->Set(ControlMode::PercentOutput, leftVal);
 	right->Set(ControlMode::PercentOutput, rightVal);
 }
+
+TalonSRX* DriveTrain::getLeftMotor() {
+	return left;
+}
+
+TalonSRX* DriveTrain::getRightMotor() {
+	return right;
+}

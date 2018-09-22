@@ -22,4 +22,6 @@ public:
 	DriveTrain();
 	void InitDefaultCommand() override;
 	void tankDrive(double leftVal, double rightVal);
+	TalonSRX* getLeftMotor();
+	TalonSRX* getRightMotor();
 };
